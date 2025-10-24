@@ -15,5 +15,4 @@ class Reader:
         else:
             raise ValueError('Expected a JSON file')
     
-
-print(Reader().read('shoplink.json')[:2])           
+       
