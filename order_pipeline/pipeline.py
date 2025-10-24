@@ -16,7 +16,7 @@ class ShopLinkETL:
         
     def run(self):
         print('Starting ShopLinkEtL run')
-        raw = self.reader.read()
+        raw = self.reader.read('shoplink.json')
         print(f'Read {len(raw)} raw rows')
         valid = self.validator.validate(raw)
         print(f'Validated {len(valid)} rows')
